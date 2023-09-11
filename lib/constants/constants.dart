@@ -13,4 +13,11 @@ class Constants {
   static final kDarkGreyColor = Color(0xff666666);
   static final kRedColor = Color(0xffFF000A);
   static final kLogoImage = 'assets/images/cropped-IMG_0679-1.png';
+  //
+  static final TextStyle TtitleFont = TextStyle(
+      fontFamily: 'ArbFONTS',
+      height: 1.1,
+      fontWeight: FontWeight.w900,
+      fontSize: 22,
+      color: Constants.kBlueColor);
 }
