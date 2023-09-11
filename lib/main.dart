@@ -1,8 +1,8 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:rev_app/screens/intro_screen/intro_screen.dart';
 import 'package:rev_app/screens/splash_screen/splash_screen.dart';
-import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,12 +25,19 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             useInheritedMediaQuery: true,
             builder: DevicePreview.appBuilder,
-            title: 'Flutter Demo',
+            title: 'Rve',
+            theme: ThemeData(
+              //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+              useMaterial3: true,
+              brightness: Brightness.light,
+              textTheme: GoogleFonts.lailaTextTheme(ThemeData.light()
+                  .textTheme), //gabrielaTextTheme //montserratTextTheme
+            ),
             debugShowCheckedModeBanner: false,
             routes: {
               IntroScreen.routeName: (_) => IntroScreen(),
             },
-            home: MySplashScreen(),
+            home:const MySplashScreen(),
           );
         });
   }
