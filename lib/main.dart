@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:rev_app/screens/bottom_nav_bar_design.dart';
 import 'package:rev_app/screens/intro_screen/intro_screen.dart';
 import 'package:rev_app/screens/splash_screen/splash_screen.dart';
 
@@ -19,6 +20,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
     return DevicePreview(
         enabled: true,
         builder: (BuildContext context) {
@@ -37,7 +39,8 @@ class MyApp extends StatelessWidget {
             routes: {
               IntroScreen.routeName: (_) => IntroScreen(),
             },
-            home:const MySplashScreen(),
+            home: BottomNavBarDesign(),
+            // const MySplashScreen(),
           );
         });
   }

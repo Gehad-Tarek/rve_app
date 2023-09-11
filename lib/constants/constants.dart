@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class Constants {
+  static final kMaintBlueColor = Color(0xffF0F1F6);
   static final kBlueColor = Color(0xff001E7F);
   static final kWhiteBackground = Color(0xffF8F8F8);
   static final kBlackColor = Color(0xff000000);
-  static final kGreyColor = Color(0xff7C7C7C);
+  static final kGreyColor = Color(0xffb6b3b3);
   static final kWhiteColor = Color(0xffFFFFFF);
   static final kYellowColor = Color(0xffFAB547);
   static final kLigthBlueColor = Color(0xff90CFDA);

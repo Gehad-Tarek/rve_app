@@ -27,9 +27,9 @@ class _MySplashScreenState extends State<MySplashScreen> {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor:Constants.kWhiteColor ,
+      backgroundColor: Constants.kWhiteColor,
       body: Container(
-          color:Constants.kWhiteColor,
+          color: Constants.kWhiteColor,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -41,7 +41,6 @@ class _MySplashScreenState extends State<MySplashScreen> {
                     // height: height * 0.3,
                     padding: EdgeInsets.all(width * 0.05),
                     decoration: BoxDecoration(
-                       
                         borderRadius: BorderRadius.circular(height * 0.17)),
                     child: Image.asset(Constants.kLogoImage),
                     // FlutterLogo(size: MediaQuery
@@ -65,7 +64,6 @@ class _MySplashScreenState extends State<MySplashScreen> {
                           fontSize: 18)),
                 ],
               ),
-    
               // SizedBox(height: height * 0.1),
               ElevatedButton(
                   onPressed: () {
