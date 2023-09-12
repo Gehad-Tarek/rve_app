@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/intro_screen/intro_screen.dart';
+import '../../constants/constants.dart';
+import '../intro_screen/intro_screen.dart';
+import '../on_boarding_screen/on_boarding_screen.dart';
+import '../../shared_widgets/elevated_button_widget.dart';
 
 class MySplashScreen extends StatefulWidget {
   const MySplashScreen({super.key});
@@ -43,19 +44,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(height * 0.17)),
                     child: Image.asset(Constants.kLogoImage),
-                    // FlutterLogo(size: MediaQuery
-                    //     .of(context)
-                    //     .size
-                    //     .height),
-                    // Center(
-                    //   child: Text(
-                    //     "REV",
-                    //     style: TextStyle(
-                    //         color: Colors.white,
-                    //         fontSize: 18,
-                    //         fontWeight: FontWeight.bold),
-                    //   ),
-                    // ),
+                   
                   )),
                   Text("Right Vacation Exchange",
                       style: TextStyle(
@@ -64,25 +53,13 @@ class _MySplashScreenState extends State<MySplashScreen> {
                           fontSize: 18)),
                 ],
               ),
-              // SizedBox(height: height * 0.1),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, IntroScreen.routeName);
-                  },
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(40),
-                    ),
-                    backgroundColor: Constants.kBlueColor,
-                    fixedSize: Size(width * 0.8, height * 0.06),
-                  ),
-                  child: Text(
-                    "Start",
-                    style: TextStyle(
-                        color: Constants.kWhiteColor,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
-                  )),
+               SizedBox(height: height * 0.1),
+              ElevatedButtonWidget(
+               onPressed: () {
+                  Navigator.pushNamed(context, OnBoardingScreen.routeName);
+                 },height:height * 0.06 ,width:width * 0.8 ,text:"Start" ,cBorder: Colors.transparent,
+                 cButton: Constants.kBlueColor,cText: Constants.kWhiteColor,
+              ),
             ],
           )),
     );
