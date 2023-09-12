@@ -1,10 +1,9 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:rev_app/screens/bottom_nav_bar_design.dart';
-import 'package:rev_app/screens/intro_screen/intro_screen.dart';
-import 'package:rev_app/screens/on_boarding_screen/on_boarding_screen.dart';
-import 'package:rev_app/screens/splash_screen/splash_screen.dart';
+import 'package:rev_app/screens/login_screen/login_screen.dart';
+import 'screens/intro_screen/intro_screen.dart';
+import 'screens/on_boarding_screen/on_boarding_screen.dart';
+import 'screens/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -42,8 +41,9 @@ class MyApp extends StatelessWidget {
               OnBoardingScreen.routeName:(_)=>OnBoardingScreen(),
             },
             //home: BottomNavBarDesign(),
-            home :const MySplashScreen(),
-            // const MySplashScreen(),
+           // home :const MySplashScreen(),
+            home :const LoginScreen(),
+            
           );
         });
   }

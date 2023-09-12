@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/bottom_nav_bar_design.dart';
-import 'package:rev_app/screens/on_boarding_screen/app_bar_image.dart';
-import 'package:rev_app/screens/on_boarding_screen/circle_row_widget.dart';
-import 'package:rev_app/screens/on_boarding_screen/on_boarding_model.dart';
-import 'package:rev_app/shared_widgets/elevated_button_widget.dart';
+import '../../constants/constants.dart';
+import '../bottom_nav_bar_design.dart';
+import 'app_bar_image.dart';
+import 'circle_row_widget.dart';
+import 'on_boarding_model.dart';
+import '../../shared_widgets/elevated_button_widget.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   OnBoardingScreen({super.key});
   static final String routeName = "onBoardingScreen";
-
   var boradControl = PageController();
   bool isLast = false;
-
   @override
   State<OnBoardingScreen> createState() => _OnBoardingScreenState();
 }
@@ -33,7 +31,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           //  print('no last');
           setState(() {
             widget.isLast = false;
-            //  value = index;
           });
         }
         setState(() {
@@ -94,7 +91,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 ),
                 Text(
                   '${model.title}',
-                  style: Constants.TtitleFont,
+                  style: Constants.TtitleFontBlue,
                 ),
                 SizedBox(
                   height: height * 0.016,
@@ -106,21 +103,25 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 ),
                 Center(
                   child: ElevatedButtonWidget(
-                      onPressed: () {
-                        if (widget.isLast) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (_) => BottomNavBarDesign()));
-                        } else {
-                          widget.boradControl.nextPage(
-                              duration: const Duration(milliseconds: 750),
-                              curve: Curves.fastLinearToSlowEaseIn);
-                        }
-                      },
-                      height: height * 0.045,
-                      width: width * 0.7,
-                      text: 'Next'),
+                    onPressed: () {
+                      if (widget.isLast) {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => BottomNavBarDesign()));
+                      } else {
+                        widget.boradControl.nextPage(
+                            duration: const Duration(milliseconds: 750),
+                            curve: Curves.fastLinearToSlowEaseIn);
+                      }
+                    },
+                    height: height * 0.045,
+                    width: width * 0.7,
+                    text: 'Next',
+                    cBorder: Colors.transparent,
+                    cButton: Constants.kBlueColor,
+                    cText: Constants.kWhiteColor,
+                  ),
                 )
               ],
             ),

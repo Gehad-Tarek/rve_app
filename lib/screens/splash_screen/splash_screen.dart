@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/intro_screen/intro_screen.dart';
-import 'package:rev_app/screens/on_boarding_screen/on_boarding_screen.dart';
-import 'package:rev_app/shared_widgets/elevated_button_widget.dart';
+import '../../constants/constants.dart';
+import '../intro_screen/intro_screen.dart';
+import '../on_boarding_screen/on_boarding_screen.dart';
+import '../../shared_widgets/elevated_button_widget.dart';
 
 class MySplashScreen extends StatefulWidget {
   const MySplashScreen({super.key});
@@ -57,7 +57,8 @@ class _MySplashScreenState extends State<MySplashScreen> {
               ElevatedButtonWidget(
                onPressed: () {
                   Navigator.pushNamed(context, OnBoardingScreen.routeName);
-                 },height:height * 0.06 ,width:width * 0.8 ,text:"Start" ,
+                 },height:height * 0.06 ,width:width * 0.8 ,text:"Start" ,cBorder: Colors.transparent,
+                 cButton: Constants.kBlueColor,cText: Constants.kWhiteColor,
               ),
             ],
           )),
