@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:rev_app/screens/bottom_nav_bar_design.dart';
 import 'package:rev_app/screens/enter_new_password_screen/enter_new_password_screen.dart';
 import 'package:rev_app/screens/login_screen/login_screen.dart';
 import 'package:rev_app/screens/sign_up_screen/sign_up_screen.dart';
@@ -45,11 +46,11 @@ class MyApp extends StatelessWidget {
               IntroScreen.routeName: (_) => IntroScreen(),
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
             },
-            //home: BottomNavBarDesign(),
+           // home: BottomNavBarDesign(),
            // home: const MySplashScreen(),
             // home :const LoginScreen(),
            // home :const EnterNewPasswordScreen(),
-            home: const SignUpScreen(),
+           // home: const SignUpScreen(),
           );
         });
   }
