@@ -11,6 +11,7 @@ class ElevatedButtonWidget extends StatelessWidget {
       required this.cBorder,
       required this.cButton,
       required this.cText});
+
   final void Function()? onPressed;
   final double? width;
   final double? height;
@@ -27,7 +28,9 @@ class ElevatedButtonWidget extends StatelessWidget {
         // },
         onPressed: onPressed!,
         style: ElevatedButton.styleFrom(
-          side: BorderSide(color: cBorder!,),
+          side: BorderSide(
+            color: cBorder!,
+          ),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(40),
           ),
@@ -38,9 +41,7 @@ class ElevatedButtonWidget extends StatelessWidget {
         child: Text(
           text!,
           style: TextStyle(
-              color: cText!,
-              fontSize: 20,
-              fontWeight: FontWeight.bold),
+              color: cText!, fontSize: 20, fontWeight: FontWeight.bold),
         ));
   }
 }

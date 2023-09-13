@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
             },
            // home: BottomNavBarDesign(),
-           // home: const MySplashScreen(),
+           home: const MySplashScreen(),
             // home :const LoginScreen(),
            // home :const EnterNewPasswordScreen(),
            // home: const SignUpScreen(),
