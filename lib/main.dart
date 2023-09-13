@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
             },
             //home: BottomNavBarDesign(),
            // home :const MySplashScreen(),
-            home :const LoginScreen(),
+            home :MySplashScreen(),
             
           );
         });
