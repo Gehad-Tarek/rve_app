@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../constants/constants.dart';
+import '../../constants/constants.dart';
 
 class TextButtonWidget extends StatelessWidget {
   const TextButtonWidget(

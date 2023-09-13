@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../constants/constants.dart';
 import '../intro_screen/intro_screen.dart';
 import '../on_boarding_screen/on_boarding_screen.dart';
-import '../../shared_widgets/elevated_button_widget.dart';
+import '../../shared/shared_widgets/elevated_button_widget.dart';
 
 class MySplashScreen extends StatefulWidget {
   const MySplashScreen({super.key});

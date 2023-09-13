@@ -1,35 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/shared/shared_responsive.dart';
 import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
 import 'package:rev_app/shared/shared_widgets/fild_components.dart';
-import 'package:rev_app/shared/shared_widgets/text_button_widget.dart';
 
-class PartitionLogin extends StatefulWidget {
-  const PartitionLogin({super.key});
+class PartitionSignUp extends StatefulWidget {
+  const PartitionSignUp({super.key});
+
   @override
-  State<PartitionLogin> createState() => _PartitionLoginState();
+  State<PartitionSignUp> createState() => _PartitionSignUpState();
 }
 
-class _PartitionLoginState extends State<PartitionLogin> {
+class _PartitionSignUpState extends State<PartitionSignUp> {
   TextEditingController userNameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  TextEditingController phoneController = TextEditingController();
   GlobalKey<FormState> userNameKey = GlobalKey<FormState>();
   GlobalKey<FormState> passwordKey = GlobalKey<FormState>();
+  GlobalKey<FormState> phoneKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
- 
     return Positioned(
-      top:height==640?height*0.2 :height * 0.26,
+      top: height * 0.3,
       left: width * 0.08,
       right: width * 0.08,
       child: Container(
         padding: EdgeInsets.symmetric(
             horizontal: width * 0.03, vertical: height * 0.014),
-        height:height==640?height*0.6 :responsiveHeighContinerLogib(height),// height < 812 ? height * 0.45 : height * 0.5,
+        height: height <= 667 ? height * 0.65 : height * 0.55, //48
         width: width * 0.7,
         decoration: BoxDecoration(
           color: Constants.kWhiteColor,
@@ -45,7 +45,7 @@ class _PartitionLoginState extends State<PartitionLogin> {
         ),
         child: Column(
           children: [
-            Center(child: Text('Log in', style: Constants.TtitleBlackFont)),
+            Center(child: Text('Sign Up', style: Constants.TtitleBlackFont)),
             SizedBox(
               height: height * 0.02,
             ),
@@ -70,36 +70,30 @@ class _PartitionLoginState extends State<PartitionLogin> {
             CustomField(FieldModel(
               controller: passwordController,
               //   icon: Icons.email,
-              labelTxt: 'Passward',
+              labelTxt: 'Enter Passward',
               type: TextInputType.visiblePassword,
               onsumbit: () {},
               key: passwordKey,
             )),
+            CustomField(FieldModel(
+              controller: phoneController,
+              //   icon: Icons.email,
+              labelTxt: 'Enter Phone',
+              type: TextInputType.phone,
+              onsumbit: () {},
+              key: phoneKey,
+            )),
             SizedBox(
-              height: height >= 812 ? height * 0.02 : height * 0.05,
+              height: height * 0.03,
             ),
             ElevatedButtonWidget(
                 onPressed: () {},
                 height: height * 0.06,
                 width: width * 0.73,
-                text: 'Log in',
+                text: 'Sign Up',
                 cBorder: Colors.transparent,
                 cButton: Constants.kBlueColor,
                 cText: Constants.kWhiteColor),
-            SizedBox(
-              height: height * 0.01,
-            ),
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Spacer(),
-                TextButtonWidget(
-                  onPressed: () {},
-                  text: 'Forget Password?',
-                  decoration: TextDecoration.underline,
-                ),
-              ],
-            ),
           ],
         ),
       ),

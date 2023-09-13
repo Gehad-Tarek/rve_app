@@ -4,7 +4,7 @@ import '../bottom_nav_bar_design.dart';
 import 'app_bar_image.dart';
 import 'circle_row_widget.dart';
 import 'on_boarding_model.dart';
-import '../../shared_widgets/elevated_button_widget.dart';
+import '../../shared/shared_widgets/elevated_button_widget.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   OnBoardingScreen({super.key});

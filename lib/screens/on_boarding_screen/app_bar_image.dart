@@ -3,7 +3,7 @@ import '../../constants/constants.dart';
 import '../bottom_nav_bar_design.dart';
 import '../intro_screen/intro_screen.dart';
 import 'on_boarding_model.dart';
-import '../../shared_widgets/text_button_widget.dart';
+import '../../shared/shared_widgets/text_button_widget.dart';
 
 class AppBarImage extends StatelessWidget {
   const AppBarImage({
