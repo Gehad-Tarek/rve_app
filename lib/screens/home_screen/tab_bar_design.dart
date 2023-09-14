@@ -29,7 +29,7 @@ class _TabBarDesignState extends State<TabBarDesign>
             backgroundColor: Constants.kMaintBlueColor,
             body: Column(children: [
               Container(
-                width: width * 0.95,
+                width: width * 0.85,
                 height: height * 0.06,
                 decoration: BoxDecoration(
                   color: Constants.kWhiteColor,
