@@ -22,7 +22,9 @@ class Constants {
       fontSize: 22,
       color: Constants.kBlueColor);
   static final TextStyle TsubGreyFont = TextStyle(
-      color: Constants.kDarkGreyColor, fontSize: 15.0, fontWeight: FontWeight.bold);
+      color: Constants.kDarkGreyColor,
+      fontSize: 15.0,
+      fontWeight: FontWeight.bold);
   static final TextStyle TwhileBoldFont = TextStyle(
       color: Constants.kWhiteColor, fontSize: 15, fontWeight: FontWeight.bold);
   static final TextStyle TtitleBlackFont = TextStyle(
@@ -30,7 +32,8 @@ class Constants {
     fontWeight: FontWeight.w900,
     height: 1.5,
     decorationThickness: 4.5,
-    fontSize: 22,fontFamily: 'ArbFONTS',
+    fontSize: 22,
+    fontFamily: 'ArbFONTS',
   );
 
   ///images
@@ -42,4 +45,7 @@ class Constants {
   static final kBeachImage = 'assets/images/beach-sea-18378306.webp';
   static final kFantasticImage =
       'assets/images/fantastic-seascape-with-ripples.jpg';
+  static final kMessageImages = 'assets/images/message.png';
+  static final kPhoneImages = 'assets/images/phone.png';
+  static final kWhatsAppImages = 'assets/images/whatsApp.png';
 }

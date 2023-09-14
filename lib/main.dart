@@ -25,7 +25,7 @@ void main() {
   //   ),
   // ], child: MyApp()));
 }
-//+++++++++++++++++++++
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
            home: BottomNavBarDesign(),
            // home: const MySplashScreen(),
             // home :const LoginScreen(),
-           // home :const EnterNewPasswordScreen(),
+           //home :const EnterNewPasswordScreen(),
            // home: const SignUpScreen(),
           );
         });

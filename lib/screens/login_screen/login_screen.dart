@@ -28,10 +28,10 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(
               height: height - height * .16,//.18
               width: width,
-              child: const Stack(
+              child:  Stack(
                 children: [
-                  AppBarImageSigninAndUp(),
-                  PartitionLogin(),
+                  AppBarImageSigninAndUp(heightAppBarImage: height * 0.55,paddingHeiImage: height == 640 ? 10: height * 0.1,widthImage: width*0.44,fontSizedStyle: Constants.TwhileBoldFont),
+                 const PartitionLogin(),
                 ],
               ),
             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rev_app/constants/constants.dart';
 import 'package:rev_app/screens/enter_new_password_screen/partition_new_password.dart';
 import 'package:rev_app/shared/shared_widgets/app_bar_image_sign_in_up.dart';
 
@@ -25,10 +26,10 @@ class _EnterNewPasswordScreenState extends State<EnterNewPasswordScreen> {
             SizedBox(
               height: height ,//- height * .18,
               width: width,
-              child: const Stack(
+              child:  Stack(
                 children: [
-                  AppBarImageSigninAndUp(),
-                  PartitionNewPassword(),
+                  AppBarImageSigninAndUp(heightAppBarImage: height * 0.55,paddingHeiImage: height == 640 ? 10: height * 0.1,widthImage: width*0.44,fontSizedStyle: Constants.TwhileBoldFont),
+                 const PartitionNewPassword(),
                 ],
               ),
             ),

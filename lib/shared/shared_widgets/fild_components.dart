@@ -14,7 +14,8 @@ class FieldModel {
   bool? enabled;
   final Key? key;
   Function? onsumbit = () {};
-
+  final int? maxLines;
+  final int? maxLength;
   FieldModel(
       {this.labelTxt = '',
       this.hintTxt = '',
@@ -25,6 +26,8 @@ class FieldModel {
       this.fieldType = FieldType.text,
       this.enabled = true,
       this.onsumbit,
+      this.maxLines,
+      this.maxLength,
       this.key});
 }
 
@@ -51,17 +54,19 @@ class _CustomFieldState extends State<CustomField> {
           }
         },
         decoration: InputDecoration(
-          fillColor:Constants.kMaintBlueColor,
-          hoverColor: Constants.kMaintBlueColor,
-          border: UnderlineInputBorder(borderSide: BorderSide.none,borderRadius: BorderRadius.circular(25)),
-           focusColor:Constants.kMaintBlueColor,
-           filled: true,
-        //  // enabledBorder: InputBorder.none,
-        //     border: fieldBorder(Constants.kGreyColor),
-        //     errorBorder: fieldBorder(Colors.red),
-        //     focusedBorder: fieldBorder(Constants.kGreyColor),
-        //     focusedErrorBorder: fieldBorder(Colors.red),
-        //     disabledBorder: fieldBorder(Colors.transparent),
+            fillColor: Constants.kMaintBlueColor,
+            hoverColor: Constants.kMaintBlueColor,
+            border: UnderlineInputBorder(
+                borderSide: BorderSide.none,
+                borderRadius: BorderRadius.circular(25)),
+            focusColor: Constants.kMaintBlueColor,
+            filled: true,
+            //  // enabledBorder: InputBorder.none,
+            //     border: fieldBorder(Constants.kGreyColor),
+            //     errorBorder: fieldBorder(Colors.red),
+            //     focusedBorder: fieldBorder(Constants.kGreyColor),
+            //     focusedErrorBorder: fieldBorder(Colors.red),
+            //     disabledBorder: fieldBorder(Colors.transparent),
             prefixIcon: Icon(widget.model.icon, color: Constants.kGreyColor),
             labelText: widget.model.labelTxt,
             labelStyle: Constants.TsubGreyFont,
@@ -79,6 +84,8 @@ class _CustomFieldState extends State<CustomField> {
                     },
                   )
                 : null),
+        maxLength: widget.model.maxLength,
+        maxLines: widget.model.maxLines,
         keyboardType: widget.model.type,
         controller: widget.model.controller,
         obscureText: widget.model.isSecure!,
@@ -93,7 +100,6 @@ class _CustomFieldState extends State<CustomField> {
 
 OutlineInputBorder fieldBorder(Color color) {
   return OutlineInputBorder(
-  
       borderRadius: BorderRadius.circular(25.0),
-      borderSide: BorderSide(color: color,width: 0 ));
+      borderSide: BorderSide(color: color, width: 0));
 }
