@@ -46,11 +46,11 @@ class MyApp extends StatelessWidget {
               IntroScreen.routeName: (_) => IntroScreen(),
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
             },
-           home: BottomNavBarDesign(),
-           // home: const MySplashScreen(),
+            home: const BottomNavBarDesign(),
+            // home: const MySplashScreen(),
             // home :const LoginScreen(),
-           //home :const EnterNewPasswordScreen(),
-           // home: const SignUpScreen(),
+            //home :const EnterNewPasswordScreen(),
+            // home: const SignUpScreen(),
           );
         });
   }
