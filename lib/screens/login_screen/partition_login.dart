@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
+import 'package:rev_app/screens/bottom_nav_bar_design.dart';
+import 'package:rev_app/screens/enter_new_password_screen/enter_new_password_screen.dart';
+import 'package:rev_app/screens/sign_up_screen/sign_up_screen.dart';
 import 'package:rev_app/shared/shared_responsive.dart';
 import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
 import 'package:rev_app/shared/shared_widgets/fild_components.dart';
@@ -21,16 +24,19 @@ class _PartitionLoginState extends State<PartitionLogin> {
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
- 
+
     return Positioned(
-      top:height==640?height*0.2 :height * 0.26,
+      top: height == 640 ? height * 0.2 : height * 0.26,
       left: width * 0.08,
       right: width * 0.08,
       child: Container(
         padding: EdgeInsets.symmetric(
             horizontal: width * 0.03, vertical: height * 0.014),
-        height:height==640?height*0.6 :responsiveHeighContinerLogib(height),// height < 812 ? height * 0.45 : height * 0.5,
-        width: width * 0.7,
+        height: height == 640
+            ? height * 0.6
+            : responsiveHeighContinerLogib(
+                height), // height < 812 ? height * 0.45 : height * 0.5,
+        width: width * 0.7,//7
         decoration: BoxDecoration(
           color: Constants.kWhiteColor,
           borderRadius: BorderRadius.circular(20),
@@ -79,27 +85,37 @@ class _PartitionLoginState extends State<PartitionLogin> {
               height: height >= 812 ? height * 0.02 : height * 0.05,
             ),
             ElevatedButtonWidget(
-                onPressed: () {},
+                onPressed: () {
+                     Navigator.push(
+                    context, MaterialPageRoute(builder: (_) =>const BottomNavBarDesign()));
+                },
                 height: height * 0.06,
                 width: width * 0.73,
                 text: 'Log in',
                 cBorder: Colors.transparent,
                 cButton: Constants.kBlueColor,
-                cText: Constants.kWhiteColor),
+                cText: Constants.kWhiteColor,
+               alignment: Alignment.center,),
             SizedBox(
               height: height * 0.01,
             ),
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Spacer(),
+             const Spacer(),
+         
                 TextButtonWidget(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context)=>const EnterNewPasswordScreen()));
+                  },
                   text: 'Forget Password?',
                   decoration: TextDecoration.underline,
+                  colorText: Constants.kGreyColor,
                 ),
               ],
             ),
+           
           ],
         ),
       ),

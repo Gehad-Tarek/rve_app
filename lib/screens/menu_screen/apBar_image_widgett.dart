@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:rev_app/constants/constants.dart';
 import 'package:rev_app/screens/select_login_signup/select_login_signup_screen.dart';
-import '../../constants/constants.dart';
-import 'on_boarding_model.dart';
-import '../../shared/shared_widgets/text_button_widget.dart';
+import 'package:rev_app/shared/shared_widgets/text_button_widget.dart';
 
-class AppBarImage extends StatelessWidget {
-  const AppBarImage({
-    super.key,
-    required this.model
-  });
-final  BoardingModel model;
+class ApBarImageWidgett extends StatelessWidget {
+  const ApBarImageWidgett({super.key});
+
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -17,33 +13,46 @@ final  BoardingModel model;
     return Container(
       padding: EdgeInsets.only(
           top: height * 0.05, left: width * 0.03, right: width * 0.03),
-      height: height * 0.55,
+      height: height * 0.45,
       width: width,
       alignment: Alignment.topCenter,
       decoration: BoxDecoration(
           //color: Constants.kBlueColor,
-          image: DecorationImage(image:AssetImage('${model.image}',),fit: BoxFit.cover ),
+          image: DecorationImage(
+              image: AssetImage(
+                '${Constants.kFantasticImage}',
+              ),
+              fit: BoxFit.cover),
           borderRadius: const BorderRadius.only(
               bottomLeft: Radius.circular(25),
               bottomRight: Radius.circular(25))),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
+
         // mainAxisSize: MainAxisSize.min,
         children: [
           SizedBox(
-              height: height * 0.08,
-              width: width * 0.12,
-              child: Image.asset(Constants.kLogoImage)),
-          TextButtonWidget(
-            decoration: TextDecoration.none,
+              height: height * 0.091,
+              width: width * 0.21,
+              child: Image.asset(Constants.kLogoTextImages)),
+          Material(
+            color: Colors.transparent,
+           // width: width * 0.2,
+            child: TextButtonWidget(
+              decoration: TextDecoration.none,
               onPressed: () {
                 Navigator.push(
-                    context, MaterialPageRoute(builder: (_) =>const SelectLoginSignUpScreen()));
+                    context,
+                    MaterialPageRoute(
+                        builder: (_) => const SelectLoginSignUpScreen()));
               },
-              text: 'Skip',colorText: Constants.kGreyColor,)
+              text: 'Logout',
+              colorText: Constants.kWhiteColor,
+            ),
+          )
         ],
-    ),
-);
-}
+      ),
+    );
+  }
 }

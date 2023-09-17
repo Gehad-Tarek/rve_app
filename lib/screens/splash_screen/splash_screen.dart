@@ -58,7 +58,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
                onPressed: () {
                   Navigator.pushNamed(context, OnBoardingScreen.routeName);
                  },height:height * 0.06 ,width:width * 0.8 ,text:"Start" ,cBorder: Colors.transparent,
-                 cButton: Constants.kBlueColor,cText: Constants.kWhiteColor,
+                 cButton: Constants.kBlueColor,cText: Constants.kWhiteColor,alignment: Alignment.center,
               ),
             ],
           )),

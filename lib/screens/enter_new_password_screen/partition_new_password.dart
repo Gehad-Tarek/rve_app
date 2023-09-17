@@ -82,7 +82,8 @@ class _PartitionNewPasswordState extends State<PartitionNewPassword> {
                 text: 'Vertify',
                 cBorder: Colors.transparent,
                 cButton: Constants.kBlueColor,
-                cText: Constants.kWhiteColor),
+                cText: Constants.kWhiteColor,
+               alignment: Alignment.center,),
             
           ],
         ),

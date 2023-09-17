@@ -93,7 +93,9 @@ class _PartitionMessageScreenState extends State<PartitionMessageScreen> {
                 text: 'Send',
                 cBorder: Colors.transparent,
                 cButton: Constants.kBlueColor,
-                cText: Constants.kWhiteColor),
+                cText: Constants.kWhiteColor,
+                alignment: null,
+                ),
             
           ],
         ),

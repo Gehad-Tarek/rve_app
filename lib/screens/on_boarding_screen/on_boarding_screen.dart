@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rev_app/screens/select_login_signup/select_login_signup_screen.dart';
 import '../../constants/constants.dart';
 import '../bottom_nav_bar_design.dart';
 import 'app_bar_image.dart';
@@ -108,7 +109,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (_) => BottomNavBarDesign()));
+                                builder: (_) => const SelectLoginSignUpScreen()));
                       } else {
                         widget.boradControl.nextPage(
                             duration: const Duration(milliseconds: 750),
@@ -121,6 +122,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     cBorder: Colors.transparent,
                     cButton: Constants.kBlueColor,
                     cText: Constants.kWhiteColor,
+                   alignment: Alignment.center,
                   ),
                 )
               ],

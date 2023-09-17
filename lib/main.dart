@@ -2,8 +2,10 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rev_app/screens/bottom_nav_bar_design.dart';
+import 'package:rev_app/screens/choose_your_week/choose_your_week.dart';
 import 'package:rev_app/screens/enter_new_password_screen/enter_new_password_screen.dart';
 import 'package:rev_app/screens/login_screen/login_screen.dart';
+import 'package:rev_app/screens/select_login_signup/select_login_signup_screen.dart';
 import 'package:rev_app/screens/sign_up_screen/sign_up_screen.dart';
 import 'screens/intro_screen/intro_screen.dart';
 import 'screens/on_boarding_screen/on_boarding_screen.dart';
@@ -47,10 +49,12 @@ class MyApp extends StatelessWidget {
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
             },
             home: const BottomNavBarDesign(),
-            // home: const MySplashScreen(),
+          //  home: const MySplashScreen(),
             // home :const LoginScreen(),
             //home :const EnterNewPasswordScreen(),
             // home: const SignUpScreen(),
+           // home: const SelectLoginSignUpScreen(),
+         //  home:const ChooseYourWeek(),
           );
         });
   }
