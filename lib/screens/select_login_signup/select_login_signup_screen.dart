@@ -37,7 +37,7 @@ class SelectLoginSignUpScreen extends StatelessWidget {
                   cBorder: Constants.kBlueColor,
                   cButton: Constants.kWhiteColor,
                   cText: Constants.kBlackColor,
-                alignment: Alignment.center,),
+                alignment: Alignment.center, borderRadius: BorderRadius.circular(40),),
             ),  
               SizedBox(
               height: height*0.01,
@@ -57,7 +57,7 @@ class SelectLoginSignUpScreen extends StatelessWidget {
                   cBorder: Constants.kBlueColor,
                   cButton: Constants.kWhiteColor,
                   cText: Constants.kBlackColor,
-                  alignment: Alignment.center,),
+                  alignment: Alignment.center, borderRadius: BorderRadius.circular(40),),
             )
       ]),
     );

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
 import 'package:rev_app/screens/bottom_nav_bar_design.dart';
 import 'package:rev_app/screens/enter_new_password_screen/enter_new_password_screen.dart';
-import 'package:rev_app/screens/sign_up_screen/sign_up_screen.dart';
 import 'package:rev_app/shared/shared_responsive.dart';
 import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
 import 'package:rev_app/shared/shared_widgets/fild_components.dart';
@@ -19,12 +18,10 @@ class _PartitionLoginState extends State<PartitionLogin> {
   TextEditingController passwordController = TextEditingController();
   GlobalKey<FormState> userNameKey = GlobalKey<FormState>();
   GlobalKey<FormState> passwordKey = GlobalKey<FormState>();
-
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
-
     return Positioned(
       top: height == 640 ? height * 0.2 : height * 0.26,
       left: width * 0.08,
@@ -95,7 +92,7 @@ class _PartitionLoginState extends State<PartitionLogin> {
                 cBorder: Colors.transparent,
                 cButton: Constants.kBlueColor,
                 cText: Constants.kWhiteColor,
-               alignment: Alignment.center,),
+               alignment: Alignment.center, borderRadius: BorderRadius.circular(40),),
             SizedBox(
               height: height * 0.01,
             ),
@@ -103,7 +100,6 @@ class _PartitionLoginState extends State<PartitionLogin> {
               mainAxisSize: MainAxisSize.min,
               children: [
              const Spacer(),
-         
                 TextButtonWidget(
                   onPressed: () {
                     Navigator.of(context)
@@ -114,8 +110,7 @@ class _PartitionLoginState extends State<PartitionLogin> {
                   colorText: Constants.kGreyColor,
                 ),
               ],
-            ),
-           
+            ), 
           ],
         ),
       ),

@@ -94,7 +94,7 @@ class _PartitionSignUpState extends State<PartitionSignUp> {
                 cBorder: Colors.transparent,
                 cButton: Constants.kBlueColor,
                 cText: Constants.kWhiteColor,
-               alignment: Alignment.center,),
+               alignment: Alignment.center, borderRadius: BorderRadius.circular(40),),
           ],
         ),
       ),

@@ -2,17 +2,18 @@ import 'package:flutter/material.dart';
 import '../../constants/constants.dart';
 
 class ElevatedButtonWidget extends StatelessWidget {
-  const ElevatedButtonWidget(
-      {super.key,
-      required this.onPressed,
-      required this.height,
-      required this.width,
-      required this.text,
-      required this.cBorder,
-      required this.cButton,
-      required this.cText,
-      required this.alignment,
-      });
+  const ElevatedButtonWidget({
+    super.key,
+    required this.onPressed,
+    required this.height,
+    required this.width,
+    required this.text,
+    required this.cBorder,
+    required this.cButton,
+    required this.cText,
+    required this.alignment,
+    required this.borderRadius,
+  });
 
   final void Function()? onPressed;
   final double? width;
@@ -22,6 +23,7 @@ class ElevatedButtonWidget extends StatelessWidget {
   final Color? cButton;
   final Color? cText;
   final AlignmentGeometry? alignment;
+  final BorderRadiusGeometry? borderRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +37,7 @@ class ElevatedButtonWidget extends StatelessWidget {
             color: cBorder!,
           ),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(40),
+            borderRadius: borderRadius!
           ),
           backgroundColor: cButton!,
           //  fixedSize: Size(width * 0.8, height * 0.06),
@@ -46,7 +48,9 @@ class ElevatedButtonWidget extends StatelessWidget {
           child: Text(
             text!,
             style: TextStyle(
-                color: cText!, fontSize: 20, ),
+              color: cText!,
+              fontSize: 20,
+            ),
           ),
         ));
   }

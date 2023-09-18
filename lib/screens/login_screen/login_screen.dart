@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
 import 'package:rev_app/screens/bottom_nav_bar_design.dart';
-import 'package:rev_app/screens/sign_up_screen/sign_up_screen.dart';
 import 'package:rev_app/shared/shared_widgets/app_bar_image_sign_in_up.dart';
 import 'package:rev_app/screens/login_screen/partition_login.dart';
 import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
@@ -72,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   cBorder: Constants.kBlueColor,
                   cButton: Constants.kWhiteColor,
                   cText: Constants.kBlackColor,
-                 alignment: Alignment.center,),
+                 alignment: Alignment.center, borderRadius: BorderRadius.circular(40),),
             )
           ],
         ),

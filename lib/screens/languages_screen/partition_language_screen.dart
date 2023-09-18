@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
 import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
 
-class partitionChooseYourWeek extends StatelessWidget {
-  const partitionChooseYourWeek({super.key});
+class PartitionLanguageScreen extends StatelessWidget {
+  const PartitionLanguageScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
+  final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Positioned(
       top: height * 0.3,
@@ -38,7 +38,7 @@ class partitionChooseYourWeek extends StatelessWidget {
             Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  '       Choose Your Week',
+                  '       Languages',
                   style: Constants.TtitleBlackFont.copyWith(fontSize: 19),
                   textAlign: TextAlign.left,
                 )),
@@ -59,7 +59,7 @@ class partitionChooseYourWeek extends StatelessWidget {
               onPressed: () {},
               height: height * 0.06,
               width: width * 0.73,
-              text: 'Basic Week',
+              text: 'English',
               cBorder: Colors.transparent,
               cButton: Constants.kWhiteBackground,
               cText: Constants.kBlackColor,
@@ -72,11 +72,12 @@ class partitionChooseYourWeek extends StatelessWidget {
               onPressed: () {},
               height: height * 0.06,
               width: width * 0.73,
-              text: 'Extra Week',
+              text: 'العربيه',
               cBorder: Colors.transparent,
               cButton: Constants.kWhiteBackground,
               cText: Constants.kBlackColor,
-              alignment: Alignment.centerLeft, borderRadius: BorderRadius.circular(40),
+              alignment: Alignment.centerLeft,
+              borderRadius: BorderRadius.circular(40),
             ),
           ],
         ),

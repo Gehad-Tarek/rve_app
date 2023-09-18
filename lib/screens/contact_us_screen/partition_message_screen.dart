@@ -28,7 +28,7 @@ class _PartitionMessageScreenState extends State<PartitionMessageScreen> {
       child: Container(
         padding: EdgeInsets.symmetric(
             horizontal: width * 0.03, vertical: height * 0.014),
-        height:height <= 812 ? height * 0.68 : height * 0.55,//667
+        height:height <= 812 ? height * 0.7 : height * 0.55,//667
         width: width * 0.7,
         decoration: BoxDecoration(
           color: Constants.kWhiteColor,
@@ -94,7 +94,7 @@ class _PartitionMessageScreenState extends State<PartitionMessageScreen> {
                 cBorder: Colors.transparent,
                 cButton: Constants.kBlueColor,
                 cText: Constants.kWhiteColor,
-                alignment: null,
+                alignment: Alignment.center, borderRadius: BorderRadius.circular(40),
                 ),
             
           ],

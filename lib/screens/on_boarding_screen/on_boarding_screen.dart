@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/screens/select_login_signup/select_login_signup_screen.dart';
 import '../../constants/constants.dart';
-import '../bottom_nav_bar_design.dart';
 import 'app_bar_image.dart';
 import 'circle_row_widget.dart';
 import 'on_boarding_model.dart';
@@ -122,7 +121,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     cBorder: Colors.transparent,
                     cButton: Constants.kBlueColor,
                     cText: Constants.kWhiteColor,
-                   alignment: Alignment.center,
+                   alignment: Alignment.center, borderRadius: BorderRadius.circular(40),
                   ),
                 )
               ],
