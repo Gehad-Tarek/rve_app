@@ -50,4 +50,5 @@ class Constants {
   static final kWhatsAppImages = 'assets/images/whatsApp.png';
   static final kLogoTextImages = 'assets/images/logoText.png';
   static final kAboutUsImages = 'assets/images/aboutUs.png';
+  static final kSbaImages = 'assets/images/spaImages.png';
 }
