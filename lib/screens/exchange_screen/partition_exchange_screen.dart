@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/exchange_screen/mini_image_background_widget.dart';
+import 'package:rev_app/shared/shared_widgets/mini_image_background_widget.dart';
 import 'package:rev_app/screens/exchange_screen/section_celender_bed&bath.dart';
 import 'package:rev_app/screens/exchange_screen/section_features_inHotel.dart';
 import 'package:rev_app/screens/exchange_screen/section_name_hotel.dart';

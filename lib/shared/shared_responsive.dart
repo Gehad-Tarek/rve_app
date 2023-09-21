@@ -36,3 +36,17 @@ double responsiveHeighPartionExchange(double screenHeight) {
     return screenHeight * 0.7;
   }
 }// height * 0.8 : height * 0.7
+
+
+  double sizedboxWidethPopularHotelWidget(double screenWidth) {
+    if (screenWidth < 812) {
+      return screenWidth / 11;
+      } else if (screenWidth == 360) {
+        return screenWidth * 0.01; //5
+      } else if (screenWidth <= 375) {
+        return screenWidth / 8; //11
+      } else if (screenWidth == 375) {
+        return screenWidth / 8;
+    }
+    return screenWidth / 8; //8
+  }
