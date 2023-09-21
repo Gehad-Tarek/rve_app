@@ -51,4 +51,5 @@ class Constants {
   static final kLogoTextImages = 'assets/images/logoText.png';
   static final kAboutUsImages = 'assets/images/aboutUs.png';
   static final kSbaImages = 'assets/images/spaImages.png';
+  static final kDoneImages = 'assets/images/doneImages.png';
 }
