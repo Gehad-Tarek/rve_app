@@ -20,7 +20,7 @@ class _CalenderScreenState extends State<CalenderScreen> {
       body: ListView(
           shrinkWrap: true,
           padding: EdgeInsets.zero,
-          physics: const NeverScrollableScrollPhysics(),
+          //physics: const NeverScrollableScrollPhysics(),
           children: [
             SizedBox(
               height: height, //- height * .18,
@@ -28,9 +28,9 @@ class _CalenderScreenState extends State<CalenderScreen> {
               child: Stack(
                 children: [
                   AppBarImageSigninAndUp(
-                      heightAppBarImage: height * 0.42,
+                      heightAppBarImage: height * 0.4,
                       paddingHeiImage:
-                          height <= 677 ? height * 0.03 : height * 0.07,
+                          height <= 677 ? height * 0.025 : height * 0.03,
                       widthImage: width * 0.44,
                       fontSizedStyle: Constants.TwhileBoldFont),
                   const PartitionCalenderScreen(),

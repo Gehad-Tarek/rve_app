@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:rev_app/screens/bottom_nav_bar_design.dart';
 import 'package:rev_app/screens/celender_screen/Calender_screen.dart';
 import 'package:rev_app/screens/choose_your_week/choose_your_week.dart';
+import 'package:rev_app/screens/details_screen/details_screen.dart';
 import 'package:rev_app/screens/enter_new_password_screen/enter_new_password_screen.dart';
 import 'package:rev_app/screens/governorate_screen/governorate_screen.dart';
 import 'package:rev_app/screens/login_screen/login_screen.dart';
@@ -34,7 +35,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
+/////
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
               IntroScreen.routeName: (_) => IntroScreen(),
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
             },
-              home: const BottomNavBarDesign(),
+            //  home: const BottomNavBarDesign(),
             //   home: const MySplashScreen(),
             // home :const LoginScreen(),
             //home :const EnterNewPasswordScreen(),
@@ -64,7 +65,8 @@ class MyApp extends StatelessWidget {
             //   home:const GovernorateScreen(),
            // home: const SelectToChangeScreen(),
           //  home: const ReplyDoneScreen(),
-           // home: const CalenderScreen(),
+          // home: const CalenderScreen(),
+          home: const DetailsScreen(),
           );
         });
   }

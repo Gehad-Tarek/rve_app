@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
+import 'package:rev_app/screens/details_screen/details_screen.dart';
 import 'package:rev_app/shared/shared_responsive.dart';
 import 'package:rev_app/shared/shared_widgets/popular_hotels_widget_item.dart';
 
@@ -120,20 +121,26 @@ class _ItemListViewSelectToChangeState
     final width = MediaQuery.of(context).size.width;
 
     return Expanded(
-      child: ListView.builder(
-        shrinkWrap: true,
-        padding: EdgeInsets.zero,
-        itemCount: selectToChangeScreen.length,
-        itemBuilder: (context, index) {
-          return PopolerHotelsWidgetItem(
-            index: index,
-            images: '${selectToChangeScreen[index]['image']}',
-            nameHotel: '${selectToChangeScreen[index]['name']}',
-            rate: '${selectToChangeScreen[index]['rate']}',
-            location: '${selectToChangeScreen[index]['location']}',
-            price: '${selectToChangeScreen[index]['price']}',
-          );
+      child: InkWell(
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>const DetailsScreen()));
         },
+        child: ListView.builder(
+          
+          shrinkWrap: true,
+          padding: EdgeInsets.zero,
+          itemCount: selectToChangeScreen.length,
+          itemBuilder: (context, index) {
+            return PopolerHotelsWidgetItem(
+              index: index,
+              images: '${selectToChangeScreen[index]['image']}',
+              nameHotel: '${selectToChangeScreen[index]['name']}',
+              rate: '${selectToChangeScreen[index]['rate']}',
+              location: '${selectToChangeScreen[index]['location']}',
+              price: '${selectToChangeScreen[index]['price']}',
+            );
+          },
+        ),
       ),
     );
   }

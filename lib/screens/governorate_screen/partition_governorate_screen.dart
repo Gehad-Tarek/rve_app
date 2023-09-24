@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
+import 'package:rev_app/screens/select_to_change_screen/select_to_change_screen.dart';
 
 class PartitionGovernorateScreen extends StatelessWidget {
   const PartitionGovernorateScreen({super.key});
@@ -78,7 +79,9 @@ class PartitionGovernorateScreen extends StatelessWidget {
               shrinkWrap: true,
               itemBuilder: (context, index) {
                 return InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> const SelectToChangeScreen()));
+                  },
                   child: Container(
                     alignment: Alignment.centerLeft,
                     padding: EdgeInsets.only(left: width * 0.037),

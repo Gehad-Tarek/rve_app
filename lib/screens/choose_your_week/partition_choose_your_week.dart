@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
+import 'package:rev_app/screens/governorate_screen/governorate_screen.dart';
 import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
 
 class partitionChooseYourWeek extends StatelessWidget {
@@ -56,7 +57,7 @@ class partitionChooseYourWeek extends StatelessWidget {
               height: height * 0.03,
             ),
             ElevatedButtonWidget(
-              onPressed: () {},
+              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> const GovernorateScreen()));},
               height: height * 0.06,
               width: width * 0.73,
               text: 'Basic Week',
@@ -69,7 +70,7 @@ class partitionChooseYourWeek extends StatelessWidget {
               height: height * 0.03,
             ),
             ElevatedButtonWidget(
-              onPressed: () {},
+              onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context)=> const GovernorateScreen()));},
               height: height * 0.06,
               width: width * 0.73,
               text: 'Extra Week',

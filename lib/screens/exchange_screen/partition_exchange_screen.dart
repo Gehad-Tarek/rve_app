@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
+import 'package:rev_app/screens/choose_your_week/choose_your_week.dart';
 import 'package:rev_app/shared/shared_widgets/mini_image_background_widget.dart';
 import 'package:rev_app/screens/exchange_screen/section_celender_bed&bath.dart';
 import 'package:rev_app/screens/exchange_screen/section_features_inHotel.dart';
@@ -72,7 +73,9 @@ class _PartitionExchangeScreenState extends State<PartitionExchangeScreen> {
               height: height * 0.04,
             ),
             ElevatedButtonWidget(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> const ChooseYourWeek()));
+              },
               height: height * 0.065,
               width: width * 0.8,
               text: 'Exchange',

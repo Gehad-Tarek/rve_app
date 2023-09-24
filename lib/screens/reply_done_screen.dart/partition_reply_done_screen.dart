@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
+import 'package:rev_app/screens/bottom_nav_bar_design.dart';
 import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
 
 class PartitionReplyDoneScreen extends StatelessWidget {
@@ -68,7 +69,7 @@ class PartitionReplyDoneScreen extends StatelessWidget {
               height:width<=412?height*0.018: height * 0.03,
             ),
             ElevatedButtonWidget(
-              onPressed: () {},
+              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> const BottomNavBarDesign()));},
               height: height * 0.05,
               width: width * 0.75,
               text: 'done',
