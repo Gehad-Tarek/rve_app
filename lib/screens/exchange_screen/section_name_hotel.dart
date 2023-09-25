@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rev_app/constants/constants.dart';
+import 'package:rev_app/screens/details_screen/details_screen.dart';
 import 'package:rev_app/shared/shared_widgets/text_button_widget.dart';
 
 class SectionNameHotel extends StatelessWidget {
@@ -47,7 +48,10 @@ class SectionNameHotel extends StatelessWidget {
                   ),
                 ),
                 TextButtonWidget(
-                    onPressed: () {},
+                    onPressed: () {
+                        Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const DetailsScreen()));
+                    },
                     text: 'View Details',
                     decoration: TextDecoration.underline,
                     colorText: Constants.kBlueColor)

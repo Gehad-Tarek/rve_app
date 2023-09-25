@@ -24,7 +24,7 @@ class _PartitionMenueScreenState extends State<PartitionMenueScreen> {
       child: Container(
         padding: EdgeInsets.symmetric(
             horizontal: width * 0.03, vertical: height * 0.014),
-        height: height > 800 ? height * 0.7 : height * 0.73,
+        height: height > 800 ? height * 0.71 : height * 0.74,
         width: width * 0.74,
         decoration: BoxDecoration(
           color: Constants.kWhiteColor,
