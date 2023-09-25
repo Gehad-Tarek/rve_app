@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/screens/exchange_screen/partition_exchange_screen.dart';
-import 'package:rev_app/shared/shared_widgets/app_bar_image_sign_in_up.dart';
+import 'partition_exchange_screen.dart';
+import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
 import '../../constants/constants.dart';
 
 class ExchangeScreen extends StatefulWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/login_screen/login_screen.dart';
-import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
-import 'package:rev_app/shared/shared_widgets/fild_components.dart';
+import '../../constants/constants.dart';
+import '../login_screen/login_screen.dart';
+import '../../shared/shared_widgets/elevated_button_widget.dart';
+import '../../shared/shared_widgets/fild_components.dart';
 
 class PartitionSignUp extends StatefulWidget {
   const PartitionSignUp({super.key});

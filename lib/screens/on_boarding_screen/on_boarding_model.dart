@@ -1,4 +1,4 @@
-import 'package:rev_app/constants/constants.dart';
+import '../../constants/constants.dart';
 
 class BoardingModel {
   final String? image;

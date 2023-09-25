@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/reply_done_screen.dart/reply_done_screen.dart';
-import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
+import '../../constants/constants.dart';
+import '../reply_done_screen.dart/reply_done_screen.dart';
+import '../../shared/shared_widgets/elevated_button_widget.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class PartitionCalenderScreen extends StatefulWidget {

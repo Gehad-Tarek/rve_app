@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/select_to_change_screen/select_to_change_screen.dart';
+import '../../constants/constants.dart';
+import '../select_to_change_screen/select_to_change_screen.dart';
 
 class PartitionGovernorateScreen extends StatelessWidget {
   const PartitionGovernorateScreen({super.key});

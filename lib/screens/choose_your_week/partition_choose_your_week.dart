@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/governorate_screen/governorate_screen.dart';
-import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
+import '../../constants/constants.dart';
+import '../governorate_screen/governorate_screen.dart';
+import '../../shared/shared_widgets/elevated_button_widget.dart';
 
 class partitionChooseYourWeek extends StatelessWidget {
   const partitionChooseYourWeek({super.key});

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/celender_screen/Calender_screen.dart';
-import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
-import 'package:rev_app/shared/widgets_compontent/section_celender_bed&bath.dart';
-import 'package:rev_app/shared/widgets_compontent/section_features_inHotel.dart';
+import '../../../constants/constants.dart';
+import '../../celender_screen/Calender_screen.dart';
+import '../../../shared/shared_widgets/elevated_button_widget.dart';
+import '../../../shared/widgets_compontent/section_celender_bed&bath.dart';
+import '../../../shared/widgets_compontent/section_features_inHotel.dart';
 
 class ViewAboutBarScreen extends StatelessWidget {
   const ViewAboutBarScreen({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/enter_new_password_screen/partition_new_password.dart';
-import 'package:rev_app/shared/shared_widgets/app_bar_image_sign_in_up.dart';
+import '../../constants/constants.dart';
+import 'partition_new_password.dart';
+import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
 
 class EnterNewPasswordScreen extends StatefulWidget {
   const EnterNewPasswordScreen({super.key});

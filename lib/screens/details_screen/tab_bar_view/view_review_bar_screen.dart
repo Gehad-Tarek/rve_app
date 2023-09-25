@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
+import '../../../constants/constants.dart';
 class ViewReviewBarScreen extends StatelessWidget {
   const ViewReviewBarScreen({super.key});
 

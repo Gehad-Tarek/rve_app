@@ -1,8 +1,8 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/menu_screen/all_menu_widget.dart';
-import 'package:rev_app/screens/menu_screen/profile_section_widget.dart';
+import '../../constants/constants.dart';
+import 'all_menu_widget.dart';
+import 'profile_section_widget.dart';
 
 class PartitionMenueScreen extends StatefulWidget {
   const PartitionMenueScreen({super.key});

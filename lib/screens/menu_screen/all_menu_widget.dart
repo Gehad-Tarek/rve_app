@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/languages_screen/language_screen.dart';
-import 'package:rev_app/screens/menu_screen/menu_widget.dart';
+import '../../constants/constants.dart';
+import '../languages_screen/language_screen.dart';
+import 'menu_widget.dart';
 
 class AllMenuWidget extends StatelessWidget {
   const AllMenuWidget({super.key});

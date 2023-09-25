@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/menu_screen/partition_edit_user_name_screen.dart';
-import 'package:rev_app/shared/shared_widgets/app_bar_image_sign_in_up.dart';
+import '../../constants/constants.dart';
+import 'partition_edit_user_name_screen.dart';
+import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
 class EditUserNameScreen extends StatefulWidget {
   const EditUserNameScreen({super.key});
   @override

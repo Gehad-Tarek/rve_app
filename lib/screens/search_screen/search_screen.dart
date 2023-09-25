@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../constants/constants.dart';
 
+import '../../constants/constants.dart';
 import '../../shared/shared_widgets/custom_app_bar_title.dart';
 
 class SearchScreen extends StatelessWidget {

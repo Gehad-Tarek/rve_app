@@ -1,23 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/celender_screen/Calender_screen.dart';
-import 'package:rev_app/screens/details_screen/tab_bar_view/view_about_bar_screen.dart';
-import 'package:rev_app/screens/details_screen/tab_bar_view/view_contant_bar_screen.dart';
-import 'package:rev_app/screens/details_screen/tab_bar_view/view_review_bar_screen.dart';
-import 'package:rev_app/screens/details_screen/tab_bar_view_widget.dart';
-import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
-import 'package:rev_app/shared/widgets_compontent/section_celender_bed&bath.dart';
-import 'package:rev_app/shared/widgets_compontent/section_features_inHotel.dart';
-import 'package:rev_app/shared/shared_widgets/custom_app_bar_title.dart';
-import 'package:rev_app/shared/shared_widgets/fav_widget.dart';
+import '../../constants/constants.dart';
+import 'tab_bar_view_widget.dart';
+import '../../shared/shared_widgets/fav_widget.dart';
 
 class DetailsScreen extends StatefulWidget {
   const DetailsScreen({super.key});
-
   @override
   State<DetailsScreen> createState() => _DetailsScreenState();
 }
-
 class _DetailsScreenState extends State<DetailsScreen> {
   TabController? _controller;
   @override
@@ -93,9 +83,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 tabAlignment: TabAlignment.start,
                 indicatorColor: Constants.kBlueColor,
                 unselectedLabelColor: Constants.kDarkGreyColor,
-                onTap: (value) {
-                  //print(value);
-                },
+                onTap: (value) {},
                 isScrollable: true,
                 labelStyle: const TextStyle(letterSpacing: .5),
                 labelPadding: EdgeInsets.symmetric(horizontal: width * 0.1),
@@ -107,7 +95,6 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   TextTitleTabBarWidget(txt:  'About',),
                   TextTitleTabBarWidget(txt:  'Contacts',),
                   TextTitleTabBarWidget(txt:  'Reviews',),
-              
                 ],
               ),
             ),

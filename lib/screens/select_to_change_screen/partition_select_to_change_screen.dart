@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/select_to_change_screen/item_list_view_selectToChange.dart';
+import '../../constants/constants.dart';
+import 'item_list_view_selectToChange.dart';
 
 class PartitionSelectToChangeScreen extends StatelessWidget {
   const PartitionSelectToChangeScreen({super.key});
