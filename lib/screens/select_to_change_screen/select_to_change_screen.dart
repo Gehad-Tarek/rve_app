@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '../../constants/constants.dart';
-import 'partition_select_to_change_screen.dart';
 import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
+import 'partition_select_to_change_screen.dart';
 
 class SelectToChangeScreen extends StatefulWidget {
   const SelectToChangeScreen({super.key});

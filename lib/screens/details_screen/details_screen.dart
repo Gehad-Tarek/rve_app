@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '../../constants/constants.dart';
-import 'tab_bar_view_widget.dart';
 import '../../shared/shared_widgets/fav_widget.dart';
+import 'tab_bar_view_widget.dart';
 
 class DetailsScreen extends StatefulWidget {
   const DetailsScreen({super.key});
@@ -17,6 +18,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
+        //backgroundColor: Constants.kMaintBlueColor,
         appBar: AppBar(
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
@@ -39,7 +41,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
             'Rixos Hotel',
             style: Constants.TwhileBoldFont.copyWith(fontSize: 20),
           ),
-          actions: [
+          actions:const [
             FavWidget(),
           ],
         ),
@@ -94,7 +96,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 tabs:const [
                   TextTitleTabBarWidget(txt:  'About',),
                   TextTitleTabBarWidget(txt:  'Contacts',),
-                  TextTitleTabBarWidget(txt:  'Reviews',),
+                  TextTitleTabBarWidget(txt:  'Reviews',), 
                 ],
               ),
             ),

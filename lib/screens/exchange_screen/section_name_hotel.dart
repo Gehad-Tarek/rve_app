@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '../../constants/constants.dart';
-import '../details_screen/details_screen.dart';
 import '../../shared/shared_widgets/text_button_widget.dart';
+import '../details_screen/details_screen.dart';
 
 class SectionNameHotel extends StatelessWidget {
   const SectionNameHotel({super.key});

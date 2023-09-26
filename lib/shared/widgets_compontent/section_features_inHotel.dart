@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../../constants/constants.dart';
+
 import 'bool_widget.dart';
 import 'circle_gym_widget.dart';
 import 'parcking_widget.dart';

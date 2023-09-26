@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../constants/constants.dart';
 
 class MiniImagesBackGroundWidget extends StatelessWidget {

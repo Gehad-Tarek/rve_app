@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '../../constants/constants.dart';
-import '../bottom_nav_bar_design.dart';
 import '../../shared/shared_widgets/elevated_button_widget.dart';
+import '../bottom_nav_bar_design.dart';
 
 class PartitionReplyDoneScreen extends StatelessWidget {
   const PartitionReplyDoneScreen({super.key});

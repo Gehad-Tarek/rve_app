@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+
 import '../../constants/constants.dart';
-import '../bottom_nav_bar_design.dart';
-import '../enter_new_password_screen/enter_new_password_screen.dart';
 import '../../shared/shared_responsive.dart';
 import '../../shared/shared_widgets/elevated_button_widget.dart';
 import '../../shared/shared_widgets/fild_components.dart';
 import '../../shared/shared_widgets/text_button_widget.dart';
+import '../bottom_nav_bar_design.dart';
+import '../enter_new_password_screen/enter_new_password_screen.dart';
 
 class PartitionLogin extends StatefulWidget {
   const PartitionLogin({super.key});

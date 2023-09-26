@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../constants/constants.dart';
 
 enum FieldType { email, password, text }

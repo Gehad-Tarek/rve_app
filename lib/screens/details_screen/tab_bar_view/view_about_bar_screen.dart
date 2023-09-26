@@ -17,7 +17,7 @@ class ViewAboutBarScreen extends StatelessWidget {
         constraints: BoxConstraints(maxWidth: width * 0.02),
         padding: EdgeInsets.symmetric(horizontal: width * 0.03),
         // decoration: BoxDecoration(color: Constants.kGreenColor),
-        child:  Column(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -41,29 +41,24 @@ class ViewAboutBarScreen extends StatelessWidget {
               height: height*0.025, 
             ),
             Row(
-            // mainAxisAlignment: MainAxisAlignment.start,
-            // crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Price to Change',
-                  style: Constants.TtitleBlackFont.copyWith(fontSize: 18,height: 1)),
+              Text('Price to Change',//style: TextStyle(color: Constants.kBlackColor,fontSize: 18,fontWeight: FontWeight.bold),),
+                style: Constants.TtitleBlackFont.copyWith(fontSize: 18,height: 1)),
               SizedBox(
                 width: width * 0.05,
               ),
-              Align(
-                alignment: Alignment.center,
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 2),
-                  child: Text(
-                    
-                    '100\$',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Constants.kYellowColor,fontWeight: FontWeight.bold,fontSize: 16,),
-                  ),
+              Padding(
+                padding: const EdgeInsets.only(top: 2),
+                child: Text(
+                  '100\$',
+             //       textAlign: TextAlign.center,
+                  style: TextStyle(color: Constants.kYellowColor,fontWeight: FontWeight.bold,fontSize: 16,),
                 ),
               ),
             ],
           ),
-          
               SizedBox(
               height: height*0.025, 
             ),
@@ -79,6 +74,9 @@ class ViewAboutBarScreen extends StatelessWidget {
             cText: Constants.kWhiteColor,
             alignment: Alignment.center,
             borderRadius: BorderRadius.circular(15),
+          ),
+        const  SizedBox(
+            height: 0,width: 0,
           ),
           ],
         ),

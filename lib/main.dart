@@ -1,20 +1,10 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'screens/bottom_nav_bar_design.dart';
-import 'screens/celender_screen/Calender_screen.dart';
-import 'screens/choose_your_week/choose_your_week.dart';
+
 import 'screens/details_screen/details_screen.dart';
-import 'screens/enter_new_password_screen/enter_new_password_screen.dart';
-import 'screens/governorate_screen/governorate_screen.dart';
-import 'screens/login_screen/login_screen.dart';
-import 'screens/reply_done_screen.dart/reply_done_screen.dart';
-import 'screens/select_login_signup/select_login_signup_screen.dart';
-import 'screens/select_to_change_screen/select_to_change_screen.dart';
-import 'screens/sign_up_screen/sign_up_screen.dart';
 import 'screens/intro_screen/intro_screen.dart';
 import 'screens/on_boarding_screen/on_boarding_screen.dart';
-import 'screens/splash_screen/splash_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -55,8 +45,8 @@ class MyApp extends StatelessWidget {
               IntroScreen.routeName: (_) => IntroScreen(),
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
             },
-            //  home: const BottomNavBarDesign(),
-           //   home: const MySplashScreen(),
+            // home: const BottomNavBarDesign(),
+            //  home: const MySplashScreen(),
             // home :const LoginScreen(),
             //home :const EnterNewPasswordScreen(),
             // home: const SignUpScreen(),

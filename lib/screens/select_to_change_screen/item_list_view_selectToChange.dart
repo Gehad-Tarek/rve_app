@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '../../constants/constants.dart';
-import '../details_screen/details_screen.dart';
-import '../../shared/shared_responsive.dart';
 import '../../shared/shared_widgets/popular_hotels_widget_item.dart';
+import '../details_screen/details_screen.dart';
 
 class ItemListViewSelectToChange extends StatefulWidget {
   const ItemListViewSelectToChange({super.key});
