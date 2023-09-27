@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'screens/bottom_nav_bar_design.dart';
 
 import 'screens/details_screen/details_screen.dart';
 import 'screens/intro_screen/intro_screen.dart';
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
               IntroScreen.routeName: (_) => IntroScreen(),
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
             },
-            // home: const BottomNavBarDesign(),
+         //  home: const BottomNavBarDesign(),
             //  home: const MySplashScreen(),
             // home :const LoginScreen(),
             //home :const EnterNewPasswordScreen(),
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
             //  home:const ChooseYourWeek(),
             //   home:const GovernorateScreen(),
            // home: const SelectToChangeScreen(),
-          //  home: const ReplyDoneScreen(),
+          //  home: const ReplyDoneScreen(), 
           // home: const CalenderScreen(),
           home: const DetailsScreen(),
           );

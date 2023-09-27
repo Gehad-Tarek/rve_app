@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'exchange_screen/exchange_screen.dart';
-import 'menu_screen/menu_screen.dart';
-import 'search_screen/search_screen.dart';
+
 import '../constants/constants.dart';
 import 'contact_us_screen/contact_us_screen.dart';
+import 'exchange_screen/exchange_screen.dart';
 import 'home_screen/home_screen.dart';
+import 'menu_screen/menu_screen.dart';
+import 'search_screen/search_screen.dart';
 
 class BottomNavBarDesign extends StatefulWidget {
   const BottomNavBarDesign({super.key});

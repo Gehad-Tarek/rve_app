@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'tab_bar_view/view_about_bar_screen.dart';
-import 'tab_bar_view/view_contant_bar_screen.dart';
-import 'tab_bar_view/view_review_bar_screen/view_review_bar_screen.dart';
+import 'view_about_bar_screen/view_about_bar_screen.dart';
+import 'view_contant_bar_screen/view_contant_bar_screen.dart';
+import 'view_review_bar_screen/view_review_bar_screen.dart';
 
 class TabBarViewWidget extends StatelessWidget {
   const TabBarViewWidget({

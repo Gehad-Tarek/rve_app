@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+
 import '../../constants/constants.dart';
+import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
+import '../../shared/shared_widgets/elevated_button_widget.dart';
 import '../bottom_nav_bar_design.dart';
 import '../login_screen/login_screen.dart';
 import '../sign_up_screen/sign_up_screen.dart';
-import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
-import '../../shared/shared_widgets/elevated_button_widget.dart';
 
 class SelectLoginSignUpScreen extends StatelessWidget {
   const SelectLoginSignUpScreen({super.key});

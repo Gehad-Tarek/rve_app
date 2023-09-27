@@ -14,6 +14,7 @@ class Constants {
   static final kDarkGreyColor = Color(0xff666666);
   static final kRedColor = Color(0xffFF000A);
 //5CB9C8
+
   ///style
   static final TextStyle TtitleFontBlue = TextStyle(
       fontFamily: 'ArbFONTS',

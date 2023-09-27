@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import '../select_login_signup/select_login_signup_screen.dart';
+
 import '../../constants/constants.dart';
+import '../../shared/shared_widgets/elevated_button_widget.dart';
+import '../select_login_signup/select_login_signup_screen.dart';
 import 'app_bar_image.dart';
 import 'circle_row_widget.dart';
 import 'on_boarding_model.dart';
-import '../../shared/shared_widgets/elevated_button_widget.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   OnBoardingScreen({super.key});

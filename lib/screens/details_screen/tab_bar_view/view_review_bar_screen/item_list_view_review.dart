@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/shared/shared_responsive.dart';
+import '../../../../shared/shared_responsive.dart';
+import '../../../../shared/shared_widgets/text_button_widget.dart';
 import '../../../../constants/constants.dart';
 import 'rating_bar_widget.dart';
 
@@ -80,25 +81,53 @@ class ItemListViewReview extends StatelessWidget {
               //         ),
               //       ),
               Container(
-                width: width*0.7,
-                child: RichText(
-                    text: TextSpan(
-                        text:
-                            '''Oh my goodness..this was one of the best dinners my daughter and I had while visiting the Maldives! Each course was different and the taste of each dish was so well prepared and fresh ''',
-                        style: TextStyle(fontSize: 13, height: 1.2),
-                        children: [
-                          TextSpan(
-                            text: ' more',
-                            onEnter: (event) {
-                              print('moreeeeeee');
-                            },
-                            style: TextStyle(
-                                color: Constants.kLigthBlueColor,
-                                fontSize: 13,
-                                height: 1.2),
-                          )
-                        ])),
+                width: width*0.72,
+               child:  RichText(
+                    text:const TextSpan(
+                   text:
+                      '''Oh my goodness..this was one of the best dinners my daughter and I had while visiting the Maldives! Each course was different and the taste of each dish was so well prepared and fresh ''',
+                  style: TextStyle(fontSize: 13, height: 1.2),),),
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                 SizedBox(
+                  width: width*0.6,
+                 ),
+                  InkWell(
+                    onTap: () {
+                      print('Text more button'); 
+                    },
+                    child: Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text('More',style: TextStyle(color: Constants.kGreenColor,fontSize: 12),)),
+                  ),
+                ],
+              ),
+              // Container(
+              //   width: width*0.7,
+              //   child: RichText(
+              //       text: TextSpan(
+              //           text:
+              //               '''Oh my goodness..this was one of the best dinners my daughter and I had while visiting the Maldives! Each course was different and the taste of each dish was so well prepared and fresh ''',
+              //           style: TextStyle(fontSize: 13, height: 1.2),
+              //           children: [
+              //             TextSpan(
+              //               text: ' more',
+              //               // onEnter: (event) {
+              //               //   print('moreeeeeee');
+              //               // },          
+              //               style: TextStyle(
+              //                   color: Constants.kLigthBlueColor,
+              //                   fontSize: 13,
+              //                   height: 1.2),
+              //             ),
+              //             // InkWell(
+              //             //   child: Text('data'),
+              //             //   onTap: (){},
+              //             // ),
+              //           ])),
+              // ),
             ],
           ),
         ],

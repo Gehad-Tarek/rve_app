@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants/constants.dart';
 
-enum FieldType { email, password, text }
+enum FieldType { email, password, text ,search}
 
 class FieldModel {
   final String? labelTxt;
@@ -46,8 +46,6 @@ class _CustomFieldState extends State<CustomField> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextFormField(
-        // showCursor: true,
-        //  readOnly: true,
         key: widget.model.key,
         validator: (x) {
           if (x!.isEmpty) {
@@ -73,18 +71,33 @@ class _CustomFieldState extends State<CustomField> {
             labelStyle: Constants.TsubGreyFont,
             hintText: widget.model.hintTxt,
             hintStyle: Constants.TsubGreyFont,
-            suffixIcon: widget.model.fieldType == FieldType.password
-                ? IconButton(
-                    icon: const Icon(Icons.remove_red_eye),
-                    color: Constants.kGreyColor,
-                    iconSize: 20.0,
-                    onPressed: () {
-                      setState(() {
-                        widget.model.isSecure = !widget.model.isSecure!;
-                      });
-                    },
-                  )
-                : null),
+            // suffixIcon: widget.model.fieldType == FieldType.password
+            //     ? IconButton(
+            //         icon: const Icon(Icons.remove_red_eye),
+            //         color: Constants.kGreyColor,
+            //         iconSize: 20.0,
+            //         onPressed: () {
+            //           setState(() {
+            //             widget.model.isSecure = !widget.model.isSecure!;
+            //           });
+            //         },
+            //       )
+            //       :null
+            suffixIcon: widget.model.fieldType == FieldType.search?IconButton(onPressed: (){}, icon: Icon(Icons.search)):null
+                //      suffixIcon: widget.model.fieldType == FieldType.password
+                // ? IconButton(
+                //     icon: const Icon(Icons.remove_red_eye),
+                //     color: Constants.kGreyColor,
+                //     iconSize: 20.0,
+                //     onPressed: () {
+                //       setState(() {
+                //         widget.model.isSecure = !widget.model.isSecure!;
+                //       });
+                //     },
+                //   )
+                //   :widget.model.fieldType == FieldType.search?IconButton(onPressed: (){}, icon: Icon(Icons.search)):null
+                  ),
+              
         maxLength: widget.model.maxLength,
         maxLines: widget.model.maxLines,
         keyboardType: widget.model.type,

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+
 import '../../constants/constants.dart';
-import '../bottom_nav_bar_design.dart';
 import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
-import 'partition_login.dart';
 import '../../shared/shared_widgets/elevated_button_widget.dart';
-import '../../shared/shared_widgets/text_button_widget.dart';
+import '../bottom_nav_bar_design.dart';
+import 'partition_login.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

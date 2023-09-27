@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants/constants.dart';
 import '../../shared/shared_widgets/fav_widget.dart';
-import 'tab_bar_view_widget.dart';
+import 'tab_bar_view/tab_bar_view_widget.dart';
 
 class DetailsScreen extends StatefulWidget {
   const DetailsScreen({super.key});
@@ -48,6 +48,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
         body: ListView(
           shrinkWrap: true,
           padding: EdgeInsets.zero,
+          //physics:const NeverScrollableScrollPhysics(),
           children: [
             SizedBox(
               height: height * 0.015,
