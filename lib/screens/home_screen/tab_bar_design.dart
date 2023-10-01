@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/screens/home_screen/tabs/all_categories.dart';
-import 'package:rev_app/screens/home_screen/tabs/apartments.dart';
-import 'package:rev_app/screens/home_screen/tabs/hotels.dart';
-import 'package:rev_app/screens/home_screen/tabs/villas.dart';
+import 'tabs/all_categories.dart';
+import 'tabs/apartments.dart';
+import 'tabs/hotels.dart';
+import 'tabs/villas.dart';
 import '../../constants/constants.dart';
 
 class TabBarDesign extends StatefulWidget {

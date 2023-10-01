@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/contact_us_screen/partition_message_screen.dart';
-import 'package:rev_app/shared/shared_widgets/app_bar_image_sign_in_up.dart';
+
+import '../../constants/constants.dart';
+import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
+import 'partition_message_screen.dart';
 
 class MessageScreen extends StatefulWidget {
   const MessageScreen({super.key});
@@ -11,7 +12,7 @@ class MessageScreen extends StatefulWidget {
 }
 
 class _MessageScreenState extends State<MessageScreen> {
-   GlobalKey<FormState> _formKeyMessageScreenUs = GlobalKey<FormState>();
+ final  GlobalKey<FormState> _formKeyMessageScreenUs = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/languages_screen/partition_language_screen.dart';
-import 'package:rev_app/shared/shared_widgets/app_bar_image_sign_in_up.dart';
+
+import '../../constants/constants.dart';
+import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
+import 'partition_language_screen.dart';
 
 class LanguageScreen extends StatefulWidget {
   const LanguageScreen({super.key});

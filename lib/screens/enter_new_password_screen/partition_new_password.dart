@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
-import 'package:rev_app/shared/shared_widgets/fild_components.dart';
+
+import '../../constants/constants.dart';
+import '../../shared/shared_widgets/elevated_button_widget.dart';
+import '../../shared/shared_widgets/fild_components.dart';
+import '../login_screen/login_screen.dart';
 
 class PartitionNewPassword extends StatefulWidget {
   const PartitionNewPassword({super.key});
@@ -76,7 +78,10 @@ class _PartitionNewPasswordState extends State<PartitionNewPassword> {
               height: height * 0.03,
             ),
             ElevatedButtonWidget(
-                onPressed: () {},
+                onPressed: () {
+                    Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const LoginScreen()));
+                },
                 height: height * 0.06,
                 width: width * 0.73,
                 text: 'Vertify',

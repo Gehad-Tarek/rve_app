@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/choose_your_week/choose_your_week.dart';
-import 'package:rev_app/shared/shared_widgets/mini_image_background_widget.dart';
-import 'package:rev_app/screens/exchange_screen/section_celender_bed&bath.dart';
-import 'package:rev_app/screens/exchange_screen/section_features_inHotel.dart';
-import 'package:rev_app/screens/exchange_screen/section_name_hotel.dart';
-import 'package:rev_app/shared/shared_responsive.dart';
-import 'package:rev_app/shared/shared_widgets/elevated_button_widget.dart';
+
+import '../../constants/constants.dart';
+import '../../shared/shared_responsive.dart';
+import '../../shared/shared_widgets/elevated_button_widget.dart';
+import '../../shared/shared_widgets/mini_image_background_widget.dart';
+import '../../shared/widgets_compontent/section_celender_bed&bath.dart';
+import '../../shared/widgets_compontent/section_features_inHotel.dart';
+import '../choose_your_week/choose_your_week.dart';
+import 'section_name_hotel.dart';
 
 
 class PartitionExchangeScreen extends StatefulWidget {

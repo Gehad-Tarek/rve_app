@@ -1,8 +1,10 @@
 import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/screens/menu_screen/edit_user_name_screen.dart';
+
+import '../../constants/constants.dart';
+import 'edit_user_name_screen.dart';
 
 class ProfileSectionWidget extends StatefulWidget {
   const ProfileSectionWidget({super.key});

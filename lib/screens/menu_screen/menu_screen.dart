@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/screens/menu_screen/apBar_image_widgett.dart';
-import 'package:rev_app/screens/menu_screen/partition_menu_screen.dart';
+import 'apBar_image_widgett.dart';
+import 'partition_menu_screen.dart';
 
 
 class MenuScreen extends StatelessWidget {

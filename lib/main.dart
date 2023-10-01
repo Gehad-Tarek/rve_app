@@ -1,20 +1,11 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:rev_app/screens/bottom_nav_bar_design.dart';
-import 'package:rev_app/screens/celender_screen/Calender_screen.dart';
-import 'package:rev_app/screens/choose_your_week/choose_your_week.dart';
-import 'package:rev_app/screens/details_screen/details_screen.dart';
-import 'package:rev_app/screens/enter_new_password_screen/enter_new_password_screen.dart';
-import 'package:rev_app/screens/governorate_screen/governorate_screen.dart';
-import 'package:rev_app/screens/login_screen/login_screen.dart';
-import 'package:rev_app/screens/reply_done_screen.dart/reply_done_screen.dart';
-import 'package:rev_app/screens/select_login_signup/select_login_signup_screen.dart';
-import 'package:rev_app/screens/select_to_change_screen/select_to_change_screen.dart';
-import 'package:rev_app/screens/sign_up_screen/sign_up_screen.dart';
+import 'screens/bottom_nav_bar_design.dart';
+
+import 'screens/details_screen/details_screen.dart';
 import 'screens/intro_screen/intro_screen.dart';
 import 'screens/on_boarding_screen/on_boarding_screen.dart';
-import 'screens/splash_screen/splash_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -55,8 +46,8 @@ class MyApp extends StatelessWidget {
               IntroScreen.routeName: (_) => IntroScreen(),
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
             },
-             home: const BottomNavBarDesign(),
-            //   home: const MySplashScreen(),
+         //  home: const BottomNavBarDesign(),
+            //  home: const MySplashScreen(),
             // home :const LoginScreen(),
             //home :const EnterNewPasswordScreen(),
             // home: const SignUpScreen(),
@@ -64,9 +55,9 @@ class MyApp extends StatelessWidget {
             //  home:const ChooseYourWeek(),
             //   home:const GovernorateScreen(),
            // home: const SelectToChangeScreen(),
-          //  home: const ReplyDoneScreen(),
+          //  home: const ReplyDoneScreen(), 
           // home: const CalenderScreen(),
-          // home: const DetailsScreen(),
+          home: const DetailsScreen(),
           );
         });
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/constants/constants.dart';
-import 'package:rev_app/shared/shared_responsive.dart';
+
+import '../../constants/constants.dart';
+import '../shared_responsive.dart';
 
 class PopolerHotelsWidgetItem extends StatelessWidget {
    PopolerHotelsWidgetItem({super.key,required this.index,required this.images,required this.nameHotel,required this.location,required this.price,required this.rate});

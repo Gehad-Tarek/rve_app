@@ -12,6 +12,20 @@ double responsiveHeighContinerLogib(double screenHeight) {
   }
 }
 
+double responsiveHeighContinerReviewBar(double screenHeight) {
+  if (screenHeight < 812) {
+    return screenHeight * 0.236;
+  } else if (screenHeight ==640 ) {
+    return screenHeight*0.236;
+   }else if (screenHeight > 812) {
+    return screenHeight * 0.186;
+  } else if (screenHeight > 1111) {
+    return screenHeight * 0.0026;
+  }else {
+    return screenHeight * 0.236;
+  }
+}
+
 double responsiveHeighPartionExchange(double screenHeight) {
   if (screenHeight < 812) {
     return screenHeight * 0.8;

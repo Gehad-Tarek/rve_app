@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/screens/contact_us_screen/message_screen.dart';
-import 'package:rev_app/screens/contact_us_screen/section_connect_contact_us.dart';
-import 'package:rev_app/shared/shared_widgets/app_bar_image_sign_in_up.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 import '../../constants/constants.dart';
+import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
+import 'message_screen.dart';
+import 'section_connect_contact_us.dart';
 
 class ContactUsScreen extends StatefulWidget {
   @override

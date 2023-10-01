@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/screens/select_login_signup/select_login_signup_screen.dart';
+
 import '../../constants/constants.dart';
-import 'on_boarding_model.dart';
 import '../../shared/shared_widgets/text_button_widget.dart';
+import '../select_login_signup/select_login_signup_screen.dart';
+import 'on_boarding_model.dart';
 
 class AppBarImage extends StatelessWidget {
   const AppBarImage({

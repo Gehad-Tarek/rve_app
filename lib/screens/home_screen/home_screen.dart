@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rev_app/screens/home_screen/tab_bar_design.dart';
 
 import '../../constants/constants.dart';
 import '../../shared/shared_widgets/custom_app_bar_title.dart';
+import 'tab_bar_design.dart';
 // >>>>>>> 62a27d715ed747538c4fb80db844ab231894e078
 
 class HomeScreen extends StatelessWidget {
