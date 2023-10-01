@@ -30,7 +30,7 @@ class _TabBarDesignState extends State<TabBarDesign>
             body: Column(children: [
               Container(
                 width: width * 0.85,
-                height: height * 0.06,
+                height: height * 0.05,
                 decoration: BoxDecoration(
                   color: Constants.kWhiteColor,
                   borderRadius: BorderRadius.circular(30.0),
