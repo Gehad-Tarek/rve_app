@@ -14,7 +14,7 @@ class ItemListViewSelectToChange extends StatefulWidget {
 
 class _ItemListViewSelectToChangeState
     extends State<ItemListViewSelectToChange> {
-  List selectToChangeScreen = [
+ List selectToChangeScreen = [
     {
       'name': 'Xperience Kiroseiz Premier',
       'location': 'Sharm El_shikh',

@@ -53,12 +53,12 @@ class _CustomFieldState extends State<CustomField> {
           }
         },
         decoration: InputDecoration(
-            fillColor: Constants.kMaintBlueColor,
-            hoverColor: Constants.kMaintBlueColor,
+            fillColor:widget.model.fieldType == FieldType.search?Constants.kWhiteColor: Constants.kMaintBlueColor,
+            hoverColor:widget.model.fieldType == FieldType.search?Constants.kWhiteColor: Constants.kMaintBlueColor,
             border: UnderlineInputBorder(
                 borderSide: BorderSide.none,
                 borderRadius: BorderRadius.circular(25)),
-            focusColor: Constants.kMaintBlueColor,
+            focusColor:widget.model.fieldType == FieldType.search?Constants.kWhiteColor: Constants.kMaintBlueColor,
             filled: true,
             //  // enabledBorder: InputBorder.none,
             //     border: fieldBorder(Constants.kGreyColor),

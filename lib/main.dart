@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
               IntroScreen.routeName: (_) => IntroScreen(),
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
             },
-         //  home: const BottomNavBarDesign(),
+           home: const BottomNavBarDesign(),
             //  home: const MySplashScreen(),
             // home :const LoginScreen(),
             //home :const EnterNewPasswordScreen(),
@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
            // home: const SelectToChangeScreen(),
           //  home: const ReplyDoneScreen(), 
           // home: const CalenderScreen(),
-          home: const DetailsScreen(),
+         // home: const DetailsScreen(),
           );
         });
   }
