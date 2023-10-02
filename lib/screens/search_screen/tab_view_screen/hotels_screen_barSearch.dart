@@ -4,6 +4,7 @@ import 'package:rev_app/shared/shared_widgets/popular_hotels_widget_item.dart';
 
 class HotelsScreenBarSearch extends StatelessWidget {
   HotelsScreenBarSearch({super.key});
+
   // List recentSearches = [
   //   'L Hotel 1',
   //   'Sharm 2',
@@ -127,12 +128,13 @@ class HotelsScreenBarSearch extends StatelessWidget {
       'image': '${Constants.kFantasticImage}'
     },
   ];
+
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return SizedBox(
-     // height: height,
+      // height: height,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -150,20 +152,21 @@ class HotelsScreenBarSearch extends StatelessWidget {
                   fontWeight: FontWeight.w800),
             ),
           ),
-           Flexible(
+          Flexible(
             child: ListView.builder(
-               physics:const NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 padding: EdgeInsets.zero,
                 shrinkWrap: true,
-               
-                itemCount:5, //recentSearches.length,
+                itemCount: 5,
+                //recentSearches.length,
                 itemBuilder: (context, index) {
                   return ListTile(
                     leading: Icon(
                       Icons.watch_later,
                       color: Constants.kGreyColor,
                     ),
-                    title: Text('Concored Hotel'), //Text('${recentSearches[index]}'),
+                    title: Text('Concored Hotel'),
+                    //Text('${recentSearches[index]}'),
                     trailing: Icon(
                       Icons.pin_end,
                       color: Constants.kGreyColor,
@@ -186,7 +189,7 @@ class HotelsScreenBarSearch extends StatelessWidget {
           ),
           Flexible(
             child: ListView.builder(
-              //  physics:const NeverScrollableScrollPhysics(),
+                //  physics:const NeverScrollableScrollPhysics(),
                 padding: EdgeInsets.zero,
                 shrinkWrap: true,
                 itemCount: selectToChangeScreen.length,
@@ -220,7 +223,7 @@ class HotelsScreenBarSearch extends StatelessWidget {
                     ),
                   );
                 }),
-          )
+          ),
         ],
       ),
     );
