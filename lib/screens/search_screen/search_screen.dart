@@ -26,6 +26,7 @@ class _SearchScreenState extends State<SearchScreen> {
       child: Scaffold(
           backgroundColor: Constants.kMaintBlueColor,
           appBar: AppBar(
+            automaticallyImplyLeading: false,
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(20.0),
@@ -75,7 +76,7 @@ class _SearchScreenState extends State<SearchScreen> {
                               color: Constants.kBlueColor,
                               fontSize: 16,
                               height: 1.2,
-                              fontWeight: FontWeight.w200),
+                              fontWeight: FontWeight.w600),
                         ),
                       )
                     ],

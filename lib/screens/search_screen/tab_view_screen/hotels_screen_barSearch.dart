@@ -189,9 +189,9 @@ class HotelsScreenBarSearch extends StatelessWidget {
           ),
           Flexible(
             child: ListView.builder(
-                //  physics:const NeverScrollableScrollPhysics(),
+                // physics:const NeverScrollableScrollPhysics(),
                 padding: EdgeInsets.zero,
-                shrinkWrap: true,
+                //shrinkWrap: true,
                 itemCount: selectToChangeScreen.length,
                 itemBuilder: (context, index) {
                   return Container(

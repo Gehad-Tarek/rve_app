@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../constants/constants.dart';
 import '../../shared/shared_widgets/app_bar_image_sign_in_up.dart';
 import '../../shared/shared_widgets/elevated_button_widget.dart';
@@ -62,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   top: height >= 812 ? height * 0.01 : height * 0.04),
               child: ElevatedButtonWidget(
                   onPressed: () {
-                     Navigator.push(
+                     Navigator.pushReplacement(
                     context, MaterialPageRoute(builder: (_) =>const BottomNavBarDesign()));
                   },
                   height: height * 0.06,
