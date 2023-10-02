@@ -4,29 +4,29 @@ import 'package:rev_app/shared/shared_widgets/popular_hotels_widget_item.dart';
 
 class HotelsScreenBarSearch extends StatelessWidget {
   HotelsScreenBarSearch({super.key});
-  List recentSearches = [
-    'L Hotel 1',
-    'Sharm 2',
-    'L Hotel 3',
-    'Sharm 4',
-    'L Hotel 5',
-    'Sharm 6',
-    'L Hotel 7',
-    'Sharm 8',
-    'L Hotel 9',
-    'Sharm 10',
-    'L Hotel 0',
-    'Sharm 1',
-    'L Hotel 2',
-    'Sharm 3',
-    'L Hotel 4',
-    'Sharm 5',
-    'L Hotel 6',
-    'Sharm 7',
-    'L Hotel 8',
-    'Sharm 9',
-    'L Hotel 10',
-  ];
+  // List recentSearches = [
+  //   'L Hotel 1',
+  //   'Sharm 2',
+  //   'L Hotel 3',
+  //   'Sharm 4',
+  //   'L Hotel 5',
+  //   // 'Sharm 6',
+  //   // 'L Hotel 7',
+  //   // 'Sharm 8',
+  //   // 'L Hotel 9',
+  //   // 'Sharm 10',
+  //   // 'L Hotel 0',
+  //   // 'Sharm 1',
+  //   // 'L Hotel 2',
+  //   // 'Sharm 3',
+  //   // 'L Hotel 4',
+  //   // 'Sharm 5',
+  //   // 'L Hotel 6',
+  //   // 'Sharm 7',
+  //   // 'L Hotel 8',
+  //   // 'Sharm 9',
+  //   // 'L Hotel 10',
+  // ];
   List selectToChangeScreen = [
     {
       'name': 'Xperience Kiroseiz Premier',
@@ -132,7 +132,7 @@ class HotelsScreenBarSearch extends StatelessWidget {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return SizedBox(
-      height: height,
+     // height: height,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -152,18 +152,18 @@ class HotelsScreenBarSearch extends StatelessWidget {
           ),
            Flexible(
             child: ListView.builder(
-              // physics:const NeverScrollableScrollPhysics(),
+               physics:const NeverScrollableScrollPhysics(),
                 padding: EdgeInsets.zero,
-               // shrinkWrap: true,
+                shrinkWrap: true,
                
-                itemCount: recentSearches.length,
+                itemCount:5, //recentSearches.length,
                 itemBuilder: (context, index) {
                   return ListTile(
                     leading: Icon(
                       Icons.watch_later,
                       color: Constants.kGreyColor,
                     ),
-                    title: Text('${recentSearches[index]}'),
+                    title: Text('Concored Hotel'), //Text('${recentSearches[index]}'),
                     trailing: Icon(
                       Icons.pin_end,
                       color: Constants.kGreyColor,
@@ -186,10 +186,9 @@ class HotelsScreenBarSearch extends StatelessWidget {
           ),
           Flexible(
             child: ListView.builder(
-               // physics:const NeverScrollableScrollPhysics(),
+              //  physics:const NeverScrollableScrollPhysics(),
                 padding: EdgeInsets.zero,
-             //   shrinkWrap: true,
-        
+                shrinkWrap: true,
                 itemCount: selectToChangeScreen.length,
                 itemBuilder: (context, index) {
                   return Container(

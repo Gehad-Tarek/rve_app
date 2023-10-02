@@ -26,7 +26,7 @@ class _TabBarDesignState extends State<TabBarDesign>
         home: DefaultTabController(
           length: tabNames.length,
           child: Scaffold(
-            backgroundColor: Constants.kMaintBlueColor,
+           backgroundColor: Constants.kMaintBlueColor,
             body: Column(children: [
               Container(
                 width: width * 0.85,
@@ -36,12 +36,14 @@ class _TabBarDesignState extends State<TabBarDesign>
                   borderRadius: BorderRadius.circular(30.0),
                 ),
                 child: TabBar(
+                  // labelColor: Constants.kMaintBlueColor,
+                  // labelStyle: TextStyle(color: Constants.kGreyColor.withOpacity(0.7)),
                   indicator: BoxDecoration(
                     color: Constants.kBlueColor,
                     borderRadius: BorderRadius.circular(30.0),
                   ),
                   indicatorSize: TabBarIndicatorSize.tab,
-                  labelColor: Constants.kDarkGreyColor,
+               labelColor: Constants.kDarkGreyColor,
                   labelPadding: EdgeInsets.zero,
                   labelStyle: TextStyle(fontWeight: FontWeight.bold),
                   tabs: tabNames

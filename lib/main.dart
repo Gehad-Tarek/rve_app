@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:rev_app/screens/splash_screen/splash_screen.dart';
 import 'screens/bottom_nav_bar_design.dart';
 
 import 'screens/details_screen/details_screen.dart';
@@ -46,8 +47,8 @@ class MyApp extends StatelessWidget {
               IntroScreen.routeName: (_) => IntroScreen(),
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
             },
-           home: const BottomNavBarDesign(),
-            //  home: const MySplashScreen(),
+          home: const BottomNavBarDesign(),
+          // home: const MySplashScreen(),
             // home :const LoginScreen(),
             //home :const EnterNewPasswordScreen(),
             // home: const SignUpScreen(),

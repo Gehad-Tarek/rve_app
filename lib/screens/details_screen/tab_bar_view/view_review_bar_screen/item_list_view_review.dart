@@ -83,10 +83,10 @@ class ItemListViewReview extends StatelessWidget {
               Container(
                 width: width*0.72,
                child:  RichText(
-                    text:const TextSpan(
+                    text: TextSpan(
                    text:
                       '''Oh my goodness..this was one of the best dinners my daughter and I had while visiting the Maldives! Each course was different and the taste of each dish was so well prepared and fresh ''',
-                  style: TextStyle(fontSize: 13, height: 1.2),),),
+                  style: TextStyle(fontSize: 13, height: 1.2,color: Constants.kBlackColor),),),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
