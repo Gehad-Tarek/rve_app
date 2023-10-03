@@ -25,6 +25,7 @@ class _ViewReviewBarScreenState extends State<ViewReviewBarScreen> {
           children: [
             Expanded(
               child: ListView.builder(
+                physics:const AlwaysScrollableScrollPhysics(),
                 itemBuilder: (context, index) {
                   return const ItemListViewReview();
                 },
