@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../constants/constants.dart';
 import '../../shared/shared_widgets/popular_hotels_widget_item.dart';
 import '../details_screen/details_screen.dart';

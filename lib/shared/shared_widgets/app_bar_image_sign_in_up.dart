@@ -46,7 +46,7 @@ class AppBarImageSigninAndUp extends StatelessWidget {
               child: Image.asset('assets/images/cropped-IMG_0679-1.png',
                   color: Constants.kWhiteColor),
             ),
-            Text('Right Vaction Exchange', style: fontSizedStyle!
+            Text('Real Vaction Exchange', style: fontSizedStyle!
                 //  Constants.TwhileBoldFont,
                 ),
           ],

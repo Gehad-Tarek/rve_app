@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../constants/constants.dart';
 import '../../shared/shared_widgets/elevated_button_widget.dart';
 import '../on_boarding_screen/on_boarding_screen.dart';
@@ -12,17 +11,7 @@ class MySplashScreen extends StatefulWidget {
 }
 
 class _MySplashScreenState extends State<MySplashScreen> {
-  //   bool first = true;
-  // @override
-  // void didChangeDependencies() async {
-  //   if (first) {
-  //     first = false;
-  //     await Future.delayed(  const Duration(seconds: 3), () async {
-  //      Navigator.push(context, MaterialPageRoute(builder:(context) =>  const BottomNavBarDesign() ));
-  //     });
-  //   }
-  //   super.didChangeDependencies();
-  // }
+
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -46,7 +35,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
                     child: Image.asset(Constants.kLogoImage),
                    
                   )),
-                  Text("Right Vacation Exchange",
+                  Text("Real Vacation Exchange",
                       style: TextStyle(
                           color: Constants.kBlueColor,
                           fontWeight: FontWeight.bold,
