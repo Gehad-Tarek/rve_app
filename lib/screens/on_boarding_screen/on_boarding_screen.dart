@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../constants/constants.dart';
+import '../../generated/l10n.dart';
 import '../../shared/shared_widgets/elevated_button_widget.dart';
 import '../select_login_signup/select_login_signup_screen.dart';
 import 'app_bar_image.dart';
@@ -57,7 +58,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             height: height * 0.016,
           ),
           Padding(
-            padding: EdgeInsets.only(left: width * .03),
+            padding: EdgeInsets.only(left: width * .03, right:width * .03 ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -118,7 +119,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     },
                     height: height * 0.045,
                     width: width * 0.7,
-                    text: 'Next',
+                    text: S.of(context).next_text,
                     cBorder: Colors.transparent,
                     cButton: Constants.kBlueColor,
                     cText: Constants.kWhiteColor,

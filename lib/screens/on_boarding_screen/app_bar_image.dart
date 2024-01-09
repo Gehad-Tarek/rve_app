@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../constants/constants.dart';
+import '../../generated/l10n.dart';
 import '../../shared/shared_widgets/text_button_widget.dart';
 import '../select_login_signup/select_login_signup_screen.dart';
 import 'on_boarding_model.dart';
@@ -42,7 +43,7 @@ final  BoardingModel model;
                 Navigator.push(
                     context, MaterialPageRoute(builder: (_) =>const SelectLoginSignUpScreen()));
               },
-              text: 'Skip',colorText: Constants.kGreyColor,)
+              text:S.of(context).skip_text,colorText: Constants.kGreyColor,)
         ],
     ),
 );

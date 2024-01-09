@@ -69,6 +69,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Skip`
+  String get skip_text {
+    return Intl.message(
+      'Skip',
+      name: 'skip_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next`
+  String get next_text {
+    return Intl.message(
+      'Next',
+      name: 'next_text',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

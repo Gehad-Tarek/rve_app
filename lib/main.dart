@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
             ],
            // supportedLocales: S.delegate.supportedLocales,
   
-            locale:const Locale('en'),
+            locale:const Locale('ar'),
 
   supportedLocales:const [
     Locale('en'), // English

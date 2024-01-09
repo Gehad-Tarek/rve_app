@@ -1,4 +1,6 @@
 {
     "name_app":"Real Vacation Exchange",
-    "start_text":"Start"
+    "start_text":"Start",
+    "skip_text":"Skip",
+    "next_text":"Next"
 }
