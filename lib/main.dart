@@ -1,13 +1,13 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:rev_app/generated/l10n.dart';
 import 'package:rev_app/screens/splash_screen/splash_screen.dart';
 import 'screens/bottom_nav_bar_design.dart';
-
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'screens/details_screen/details_screen.dart';
 import 'screens/intro_screen/intro_screen.dart';
 import 'screens/on_boarding_screen/on_boarding_screen.dart';
-
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
@@ -44,6 +44,20 @@ class MyApp extends StatelessWidget {
               brightness: Brightness.light,
             ),
             debugShowCheckedModeBanner: false,
+            localizationsDelegates:const [
+                S.delegate,
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+                GlobalCupertinoLocalizations.delegate,
+            ],
+           // supportedLocales: S.delegate.supportedLocales,
+  
+            locale:const Locale('en'),
+
+  supportedLocales:const [
+    Locale('en'), // English
+    Locale('ar'), 
+  ],
             routes: {
               IntroScreen.routeName: (_) => IntroScreen(),
               OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
